@@ -8,4 +8,8 @@ class Calculadora:
         return self.resultado
 
     def suma(self, num1, num2):
-        self.resultado = num1 + num2
+        if not isinstance(num1, (int, float)) \
+                or not isinstance(num2, (int, float)):
+            self.resultado = 'Datos inválidos'
+        else:
+            self.resultado = num1 + num2
