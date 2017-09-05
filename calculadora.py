@@ -1,5 +1,8 @@
 # coding=utf-8
 
+import math
+
+
 class Calculadora:
     def __init__(self):
         self.resultado = 0
