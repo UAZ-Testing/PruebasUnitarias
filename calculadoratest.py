@@ -27,5 +27,8 @@ class CalculadoraTest(unittest.TestCase):
         self.calc.suma('L', 2)
         self.assertEqual(self.calc.get_resultado(), 'Datos inválidos')
 
+    def tearDown(self):
+        pass
+
 if __name__ == '__main__':
     unittest.main()
